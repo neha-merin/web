@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neha Merin | Portfolio</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f9f1f0;
+            color: #3c2f2f;
+            line-height: 1.6;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #800000;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 1rem;
+            animation: fadeIn 2s ease;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #a0522d;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            animation: slideDown 1s ease;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        section {
+            padding: 2rem 1rem;
+            max-width: 800px;
+            margin: auto;
+            animation: fadeIn 1.5s ease;
+        }
+
+        .about,
+        .skills,
+        .projects,
+        .contact {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: #800000;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 4px;
+            background-color: #ffd700;
+            margin-top: 0.5rem;
+            animation: growLine 1s ease;
+        }
+
+        .skills ul {
+            list-style-type: none;
+        }
+
+        .skills ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #800000;
+            color: #fff;
+            padding: 1rem 0;
+            margin-top: 2rem;
+            animation: fadeIn 2s ease;
+        }
+
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+
+        .social-links {
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            margin: 0 0.5rem;
+            font-size: 1.5rem;
+            color: #3c2f2f;
+            transition: transform 0.3s;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.2);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes growLine {
+            from {
+                width: 0;
+            }
+            to {
+                width: 50px;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Neha Merin</h1>
+        <p>Computer Engineering Student | Aspiring Web Developer</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Neha Merin, a Computer Engineering student at Saint Gits. I'm passionate about coding, reading, sleeping, and learning new things. Currently, I'm diving into web development and enhancing my technical skills. I thrive in team environments and enjoy taking on leadership roles.</p>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Leadership</li>
+            <li>Communication</li>
+            <li>Teamwork</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Current Projects</h2>
+        <p>I'm actively participating in <strong>TinkerHack</strong>, a hackathon organized by TinkerHub, where I collaborate with a team to solve real-world problems through innovative coding solutions.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to connect with me on:</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/neha-merin-biji-45a6572a5/" target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com/neha_merin" target="_blank">Instagram</a>
+            <a href="https://github.com/neha-merin" target="_blank">GitHub</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Neha Merin | Designed with love and minimalism</p>
+    </footer>
+</body>
+</html>
